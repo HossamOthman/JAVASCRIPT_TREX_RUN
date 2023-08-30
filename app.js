@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function generateObstacles() {
-    let randomTime = Math.random() * 4500;
+    let randomTime = Math.random() * 4500  ;
     let obstaclePosition = 1000;
     const obstacle = document.createElement("div");
     if (!isGameover) obstacle.classList.add("obstacle");
@@ -59,6 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(timerId);
         alert.innerHTML = "Game Over!";
         isGameover = true;
+
+        // remove Children
+        while (grid.firstChild) {
+            grid.removeChild(grid.lastChild)
+        }
       }
 
       obstaclePosition -= 10;
