@@ -1,0 +1,16 @@
+body {
+    background-color: antiquewhite;
+    height: 100vh;
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; */
+    margin: 0;
+}
+
+.dino {
+    position: absolute;
+    bottom: 0px;
+    width: 60px;
+    height: 60px; 
+    background-color: burlywood;
+}
